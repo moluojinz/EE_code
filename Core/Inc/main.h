@@ -59,14 +59,46 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_Pin GPIO_PIN_13
 #define LED_GPIO_Port GPIOC
+#define EC_BL_A_Pin GPIO_PIN_0
+#define EC_BL_A_GPIO_Port GPIOA
+#define EC_BL_B_Pin GPIO_PIN_1
+#define EC_BL_B_GPIO_Port GPIOA
 #define MP3_TX_Pin GPIO_PIN_2
 #define MP3_TX_GPIO_Port GPIOA
 #define MP3_RX_Pin GPIO_PIN_3
 #define MP3_RX_GPIO_Port GPIOA
+#define EC_BR_A_Pin GPIO_PIN_6
+#define EC_BR_A_GPIO_Port GPIOA
+#define EC_BR_B_Pin GPIO_PIN_7
+#define EC_BR_B_GPIO_Port GPIOA
 #define DEBUG_TX_Pin GPIO_PIN_10
 #define DEBUG_TX_GPIO_Port GPIOB
 #define DEBUG_RX_Pin GPIO_PIN_11
 #define DEBUG_RX_GPIO_Port GPIOB
+#define BLIN_B_Pin GPIO_PIN_12
+#define BLIN_B_GPIO_Port GPIOB
+#define BLIN_A_Pin GPIO_PIN_13
+#define BLIN_A_GPIO_Port GPIOB
+#define FIN_B_Pin GPIO_PIN_14
+#define FIN_B_GPIO_Port GPIOB
+#define FIN_A_Pin GPIO_PIN_15
+#define FIN_A_GPIO_Port GPIOB
+#define EC_F_B_Pin GPIO_PIN_8
+#define EC_F_B_GPIO_Port GPIOA
+#define EC_F_A_Pin GPIO_PIN_9
+#define EC_F_A_GPIO_Port GPIOA
+#define BRIN_B_Pin GPIO_PIN_10
+#define BRIN_B_GPIO_Port GPIOA
+#define BRIN_A_Pin GPIO_PIN_11
+#define BRIN_A_GPIO_Port GPIOA
+#define PWM_F_Pin GPIO_PIN_6
+#define PWM_F_GPIO_Port GPIOB
+#define PWM_BL_Pin GPIO_PIN_7
+#define PWM_BL_GPIO_Port GPIOB
+#define PWM_BR_Pin GPIO_PIN_8
+#define PWM_BR_GPIO_Port GPIOB
+#define PWM_SERVO_Pin GPIO_PIN_9
+#define PWM_SERVO_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

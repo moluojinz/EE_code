@@ -7,10 +7,10 @@
 
 #include "stm32f1xx_hal.h"
 int16_t TIM_GetEncorder(uint8_t Which);
-void Motor_StateUpdate(void);
+float Motor_StateUpdate(float Speed_cnt);
 void TIM_StartEncorder(void);
 void Motor_SpeedC_L(void);
-void Motor_SpeedC_R(void);
+void Motor_SpeedC_F(void);
 void PID_Init();
 extern uint32_t Set_L,Set_R;
 
