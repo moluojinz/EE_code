@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="EE_code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EE_code.elf">
+				<Option output="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 EE_code.elf"/>
+					<CompileFile command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EE_code.elf/fast">
+				<Option output="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include"/>
+					<Add directory="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\environment_for_clion_stm32\gcc-arm-none-eabi\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 EE_code.elf/fast"/>
+					<CompileFile command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environment_for_clion_stm32/mingw/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/bsp_headfile.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/debugc.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/debugc.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/encoder.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/encoder.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/mp3.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/mp3.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/pid.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/pid.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/dma.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/gpio.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/main.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/stm32f1xx_hal_conf.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/stm32f1xx_it.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/tim.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/usart.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/dma.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/gpio.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/main.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/stm32f1xx_it.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/syscalls.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/sysmem.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/system_stm32f1xx.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/tim.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/usart.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Startup/startup_stm32f103c8tx.s">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Device/ST/STM32F1xx/License.md">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/LICENSE.txt">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/License.md">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/STM32F103C8TX_FLASH.ld">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

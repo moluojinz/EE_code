@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Startup/startup_stm32f103c8tx.s
+
