@@ -20,8 +20,8 @@ int16_t start_flag = 0;
 
 void DEBUGC_UartInit(void)
 {
-    __HAL_UART_ENABLE_IT(&huart2, UART_IT_IDLE);
-    HAL_UART_Receive_DMA(&huart2, (uint8_t*)debugRvBuff, DEBUG_RVSIZE);
+    __HAL_UART_ENABLE_IT(&huart3, UART_IT_IDLE);
+    HAL_UART_Receive_DMA(&huart3, (uint8_t*)debugRvBuff, DEBUG_RVSIZE);
 }
 
 void usart_printf(const char* format, ...)
@@ -34,7 +34,7 @@ void usart_printf(const char* format, ...)
 //  length =
     va_end(args);
     //HAL_UART_Transmit(&huart8, (uint8_t *)send_buf, length, 0xFFFF);
-    HAL_UART_Transmit_DMA(&huart2, (uint8_t*)send_buf, length);
+    HAL_UART_Transmit_DMA(&huart3, (uint8_t*)send_buf, length);
 }
 
 
@@ -123,7 +123,7 @@ void DEBUGC_UartIdleCallback(UART_HandleTypeDef* huart)
 
 void DEBUGC_UartIrqHandler(UART_HandleTypeDef* huart)
 {
-    if (huart->Instance == USART2)                                   //判断是否是串口6
+    if (huart->Instance == USART3)                                   //判断是否是串口6
     {
         if (__HAL_UART_GET_FLAG(huart, UART_FLAG_IDLE)!= RESET)   //判断是否是空闲中断
         {

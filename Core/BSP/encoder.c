@@ -25,14 +25,21 @@ static int TIMER = 0;
 
 int ship =  1 ; //ship(单片机):1 和 0
 
+void encoder_Init(void)
+{
+    TIM_StartEncorder();
+    PID_Init();
+
+}
+
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
-    if (htim == &htim4)
+    if (htim == &htim4)             //10ms中断
     {
-//        Motor_SpeedC_R();
+        Motor_SpeedC_F();
 //        TIMER++;
-//		usart_printf("%d\r\n",TIMER);
+//		usart_printf("%d\r\n",1);
     }
 }
 
@@ -69,7 +76,7 @@ int16_t TIM_GetEncorder(uint8_t Which) //5ms调用一次
 
 float Motor_StateUpdate(float Speed_cnt) //如何转换单位？
 {
-    Speed_cnt = Speed_cnt  * 60 / (2000 * 30* 0.1); //M计数法 单位rpm
+    Speed_cnt = Speed_cnt  * 60 / (44 * 30* 0.01); //M计数法 单位rpm
     return Speed_cnt;
 }
 
@@ -84,9 +91,9 @@ static int8_t flag = 0;
 /*          电机配置           */
 /*            前轮            */
 /*     A:PB15                */
-/*     b:PB14                */
+/*     B:PB14                */
 /*    EA:PA9 ----> TIM1->CH2 */
-/*    EA:PA8 ----> TIM1->CH1 */
+/*    EB:PA8 ----> TIM1->CH1 */
 /*   PWM:PB6 ----> TIM4->CH1 */
 /**************/
 
@@ -101,11 +108,11 @@ void Motor_SpeedC_F(void)
     MotorSpeedPID_F.PID_OutMax = 450;
 
     //位置环PID参数
-    MotorSpeedPID_F.Kp1 = 10;
-    MotorSpeedPID_F.Ki1 = 1;
-    MotorSpeedPID_F.Kd1 = 0; //参数自己确定
-    MotorSpeedPID_F.PID_OutMax = 333;
-    MotorSpeedPID_F.PID_Target = /*Debug_Param().pos_targetAngle*/SetPos_F;
+//    MotorSpeedPID_F.Kp1 = 10;
+//    MotorSpeedPID_F.Ki1 = 1;
+//    MotorSpeedPID_F.Kd1 = 0; //参数自己确定
+//    MotorSpeedPID_F.PID_OutMax = 333;
+//    MotorSpeedPID_F.PID_Target = /*Debug_Param().pos_targetAngle*/SetPos_F;
 
     //利用VOFA+外部传输值进行实时调整参数
     MotorSpeedPID_F.Kp1 = /*5*/Debug_Param().vel_kp;
@@ -122,8 +129,8 @@ void Motor_SpeedC_F(void)
 
     Speed_F=Motor_StateUpdate(Speed_F);
     //位置环PID
-    PID_Update(&MotorSpeedPID_F, Position_R);
-    PID_GetPositionPID(&MotorSpeedPID_F);
+//    PID_Update(&MotorSpeedPID_F, Position_R);
+//    PID_GetPositionPID(&MotorSpeedPID_F);
 
     //速度环PID
     //MotorSpeedPID.PID_Target = MotorPosPID.PID_Out;

@@ -13,6 +13,6 @@ void Motor_SpeedC_L(void);
 void Motor_SpeedC_F(void);
 void PID_Init();
 extern uint32_t Set_L,Set_R;
-
+void encoder_Init(void);
 
 #endif //EE_CODE_ENCODER_H
