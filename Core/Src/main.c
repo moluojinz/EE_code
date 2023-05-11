@@ -99,6 +99,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim4);
   DEBUGC_UartInit();
   encoder_Init();
+  TIM_StartEncorder();
   /* USER CODE END 2 */
 
   /* Infinite loop */
