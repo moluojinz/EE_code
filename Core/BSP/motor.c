@@ -28,7 +28,6 @@ void CAR_longitudinal(float des)
     SetPos_F+=0;
     SetPos_BL+=-des/((float)COS_30);
     SetPos_BR+=des/((float)COS_30);
-
 }
 /*******横向********/
 /*三个轮子同时作为驱动轮*/
@@ -41,5 +40,4 @@ void CAR_transverse(float des)
     SetPos_F+=-des;
     SetPos_BL+=des/((float)COS_60);
     SetPos_BR+=des/((float)COS_60);
-
 }
