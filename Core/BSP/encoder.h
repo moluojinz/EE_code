@@ -9,10 +9,16 @@
 int16_t TIM_GetEncorder(uint8_t Which);
 float Motor_StateUpdate(float Speed_cnt);
 void TIM_StartEncorder(void);
-void Motor_SpeedC_L(void);
+void Motor_SpeedC_BL(void);
+void Motor_SpeedC_BR(void);
 void Motor_SpeedC_F(void);
 void PID_Init();
-extern uint32_t Set_L,Set_R;
 void encoder_Init(void);
+
+
+
+extern float SetPos_F,SetPos_BL,SetPos_BR;
+extern uint32_t Set_L,Set_R;
+
 
 #endif //EE_CODE_ENCODER_H
