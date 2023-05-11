@@ -111,11 +111,11 @@ void Motor_SpeedC_F(void)
     MotorSpeedPID_F.PID_OutMax = 450;
 
     //位置环PID参数
-    MotorPosPID_F.Kp1 = /*10*/Debug_Param().vel_kp;
-    MotorPosPID_F.Ki1 = /*1*/Debug_Param().vel_ki;
-    MotorPosPID_F.Kd1 = /*0*/Debug_Param().vel_kd; //参数自己确定
+    MotorPosPID_F.Kp1 = 2/*Debug_Param().vel_kp*/;
+    MotorPosPID_F.Ki1 = 0/*Debug_Param().vel_ki*/;
+    MotorPosPID_F.Kd1 = 0.3/*Debug_Param().vel_kd*/; //参数自己确定
     MotorPosPID_F.PID_OutMax = 333;
-    MotorPosPID_F.PID_Target = Debug_Param().vel_rampTargetValue/*SetPos_F*/;
+    MotorPosPID_F.PID_Target = /*Debug_Param().vel_rampTargetValue*/SetPos_F;
 
     //利用VOFA+外部传输值进行实时调整参数
     MotorSpeedPID_F.Kp1 = 1.1/*Debug_Param().vel_kp*/;
