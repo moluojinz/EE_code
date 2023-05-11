@@ -224,6 +224,30 @@ Core/BSP/mp3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.s
 .PHONY : Core/BSP/mp3.c.s
 
+Core/BSP/openmv.obj: Core/BSP/openmv.c.obj
+.PHONY : Core/BSP/openmv.obj
+
+# target to build an object file
+Core/BSP/openmv.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj
+.PHONY : Core/BSP/openmv.c.obj
+
+Core/BSP/openmv.i: Core/BSP/openmv.c.i
+.PHONY : Core/BSP/openmv.i
+
+# target to preprocess a source file
+Core/BSP/openmv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.i
+.PHONY : Core/BSP/openmv.c.i
+
+Core/BSP/openmv.s: Core/BSP/openmv.c.s
+.PHONY : Core/BSP/openmv.s
+
+# target to generate assembly for a file
+Core/BSP/openmv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.s
+.PHONY : Core/BSP/openmv.c.s
+
 Core/BSP/pid.obj: Core/BSP/pid.c.obj
 .PHONY : Core/BSP/pid.obj
 
@@ -853,6 +877,9 @@ help:
 	@echo ... Core/BSP/mp3.obj
 	@echo ... Core/BSP/mp3.i
 	@echo ... Core/BSP/mp3.s
+	@echo ... Core/BSP/openmv.obj
+	@echo ... Core/BSP/openmv.i
+	@echo ... Core/BSP/openmv.s
 	@echo ... Core/BSP/pid.obj
 	@echo ... Core/BSP/pid.i
 	@echo ... Core/BSP/pid.s

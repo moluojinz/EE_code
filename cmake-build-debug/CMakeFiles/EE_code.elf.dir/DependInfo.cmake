@@ -35,6 +35,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/encoder.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/mp3.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj.d"
+  "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/openmv.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/pid.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/dma.c" "CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/gpio.c" "CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj.d"

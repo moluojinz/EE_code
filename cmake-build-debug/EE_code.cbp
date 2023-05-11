@@ -98,6 +98,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/Kinematic_analysis.md">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/analyize.jpg">
+			<Option target="EE_code.elf"/>
+		</Unit>
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/bsp_headfile.h">
 			<Option target="EE_code.elf"/>
 		</Unit>
@@ -123,6 +129,12 @@
 			<Option target="EE_code.elf"/>
 		</Unit>
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/mp3.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/openmv.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/openmv.h">
 			<Option target="EE_code.elf"/>
 		</Unit>
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/pid.c">

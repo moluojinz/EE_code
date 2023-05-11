@@ -10,6 +10,7 @@
 #include "encoder.h"
 #include "motor.h"
 #include "pid.h"
+#include "openmv.h"
 
 
 #endif //EE_CODE_BSP_HEADFILE_H

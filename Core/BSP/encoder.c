@@ -7,12 +7,16 @@
 #include "debugc.h"
 #include "pid.h"
 #include "math.h"
+#include "bsp_headfile.h"
+#include "openmv.h"
 //#include "stm32f1xx_hal_gpio.h"
 #include "main.h"
 
 float SetSpd_F,SetSpd_BL,SetSpd_BR;     //设置转速
 float SetPos_F,SetPos_BL,SetPos_BR;     //设置位置环
-
+float Speed_BL=0.0;
+float Speed_BR=0.0;
+float Speed_F=0.0;
 float Speed=0.0;
 float Position_F=0.0,Position_BL=0.0,Position_BR=0.0;
 int16_t Diretion = 0;
@@ -40,6 +44,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
         Motor_SpeedC_F();
         Motor_SpeedC_BL();
         Motor_SpeedC_BR();
+        usart_printf("%d,%d,%d,%d\r\n",Cx,Cy,Cw,Ch);
 //        TIMER++;
 //		usart_printf("%d\r\n",1);
     }
@@ -98,7 +103,7 @@ int16_t TIM_GetEncorder(uint8_t Which) //5ms调用一次
             Diretion = __HAL_TIM_IS_TIM_COUNTING_DOWN(&htim3);
             Speed = (short)(__HAL_TIM_GET_COUNTER(&htim3));//0—65535
             test_CNT_tim3 = Speed;
-            Position_BL += test_CNT_tim3 ;
+            Position_BR += test_CNT_tim3 ;
             //usart_printf("%d\r\n",Speed);
                     __HAL_TIM_SetCounter (&htim3, 0);  //计数值重新清零
             break;
@@ -127,7 +132,7 @@ static int8_t flag = 0;
 
 /**************/
 /*          电机配置           */
-/*            前轮            */
+/*            后轮            */
 /*     A:PB15                */
 /*     B:PB14                */
 /*    EA:PA9 ----> TIM1->CH2 */
@@ -137,7 +142,7 @@ static int8_t flag = 0;
 
 void Motor_SpeedC_F(void)
 {
-    float Speed_F=0.0;
+
     /*//速度环PID参数
     MotorSpeedPID.Kp1 = 0.5;
     MotorSpeedPID.Ki1 = 0;
@@ -146,18 +151,18 @@ void Motor_SpeedC_F(void)
     MotorSpeedPID_F.PID_OutMax = 450;
 
     //位置环PID参数
-    MotorPosPID_F.Kp1 = 2/*Debug_Param().vel_kp*/;
+    MotorPosPID_F.Kp1 =2 /*Debug_Param().vel_kp*/;
     MotorPosPID_F.Ki1 = 0/*Debug_Param().vel_ki*/;
     MotorPosPID_F.Kd1 = 0.3/*Debug_Param().vel_kd*/; //参数自己确定
     MotorPosPID_F.PID_OutMax = 333;
-    MotorPosPID_F.PID_Target = /*Debug_Param().vel_rampTargetValue*/SetPos_F;
+    MotorPosPID_F.PID_Target = SetPos_F/*Debug_Param().vel_rampTargetValueDebug_Param().vel_ki*/;
 
     //利用VOFA+外部传输值进行实时调整参数
-    MotorSpeedPID_F.Kp1 = 1.1/*Debug_Param().vel_kp*/;
+    MotorSpeedPID_F.Kp1 = 3/*Debug_Param().vel_kp*/;
     //usart_printf("%.2f\r\n",MotorSpeedPID.Kp1);//调试外部输入功能
-    MotorSpeedPID_F.Ki1 = 0.2/*Debug_Param().vel_ki*/;
+    MotorSpeedPID_F.Ki1 = 0.11/*Debug_Param().vel_ki*/;
     //usart_printf("%.2f\r\n",MotorSpeedPID.Ki1);
-    MotorSpeedPID_F.Kd1 = 0.5/*Debug_Param().vel_kd*/;
+    MotorSpeedPID_F.Kd1 = 0.05/*Debug_Param().vel_kd*/;
     // usart_printf("%.2f\r\n",MotorSpeedPID.Kd1);
 //    MotorSpeedPID_F.PID_Target=20/*Debug_Param().vel_rampTargetValue*/;
     //usart_printf("%.2f\r\n",MotorSpeedPID.PID_Target);
@@ -171,24 +176,24 @@ void Motor_SpeedC_F(void)
     PID_GetPositionPID(&MotorPosPID_F);
 
     //速度环PID
-    MotorSpeedPID_F.PID_Target = MotorPosPID_F.PID_Out;
+    MotorSpeedPID_F.PID_Target = /*50*/MotorPosPID_F.PID_Out;
     PID_Update(&MotorSpeedPID_F, (float)Speed_F);
     PID_GetPositionPID(&MotorSpeedPID_F);
 
     if (MotorSpeedPID_F.PID_Out < 0)
     {
-        HAL_GPIO_WritePin(FIN_A_GPIO_Port, FIN_A_Pin, GPIO_PIN_SET);
-        HAL_GPIO_WritePin(FIN_B_GPIO_Port, FIN_B_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(FIN_A_GPIO_Port, FIN_A_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(FIN_B_GPIO_Port, FIN_B_Pin, GPIO_PIN_SET);
         MotorSpeedPID_F.PID_Out = -MotorSpeedPID_F.PID_Out;
     }
     else
     {
-        HAL_GPIO_WritePin(FIN_A_GPIO_Port, FIN_A_Pin, GPIO_PIN_RESET);
-        HAL_GPIO_WritePin(FIN_B_GPIO_Port, FIN_B_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(FIN_A_GPIO_Port, FIN_A_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(FIN_B_GPIO_Port, FIN_B_Pin, GPIO_PIN_RESET);
         MotorSpeedPID_F.PID_Out = MotorSpeedPID_F.PID_Out;
     }
     // MotorSpeedPID.PID_Out = 200;
-    usart_printf("%f,%f,%f,%d\r\n", MotorPosPID_F.PID_Out, Position_F, MotorPosPID_F.PID_Target,test_CNT_tim1);
+//    usart_printf("%f,%f,%f,%d\r\n", Speed_F, Speed_BL, Speed_BR,test_CNT_tim1);
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, MotorSpeedPID_F.PID_Out);
 
 
@@ -204,14 +209,15 @@ void Motor_SpeedC_F(void)
 /*    EB:PA0 ----> TIM2->CH1 */
 /*   PWM:PB7 ----> TIM4->CH2 */
 /**************/
+
 void Motor_SpeedC_BL(void)
 {
-    float Speed_BL=0.0;
-    /*//速度环PID参数
-    MotorSpeedPID.Kp1 = 0.5;
-    MotorSpeedPID.Ki1 = 0;
-    MotorSpeedPID.Kd1 = 0;
-    //MotorSpeedPID.PID_Target = Debug_Param().pos_targetAngle; //速度环调试用*/
+
+   //速度环PID参数
+    MotorSpeedPID_BL.Kp1 = 3.1;
+    MotorSpeedPID_BL.Ki1 = 0.13;
+    MotorSpeedPID_BL.Kd1 = 0.05;
+    //MotorSpeedPID.PID_Target = Debug_Param().pos_targetAngle; //速度环调试用
     MotorSpeedPID_BL.PID_OutMax = 450;
 
     //位置环PID参数
@@ -219,18 +225,17 @@ void Motor_SpeedC_BL(void)
     MotorPosPID_BL.Ki1 = 0/*Debug_Param().vel_ki*/;
     MotorPosPID_BL.Kd1 = 0.3/*Debug_Param().vel_kd*/; //参数自己确定
     MotorPosPID_BL.PID_OutMax = 333;
-    MotorPosPID_BL.PID_Target = /*Debug_Param().vel_rampTargetValue*/SetPos_BL;
+    MotorPosPID_BL.PID_Target = SetPos_BL/*Debug_Param().vel_kdDebug_Param().vel_rampTargetValue*/;
 
     //利用VOFA+外部传输值进行实时调整参数
-    MotorSpeedPID_BL.Kp1 = 1.1/*Debug_Param().vel_kp*/;
-    //usart_printf("%.2f\r\n",MotorSpeedPID.Kp1);//调试外部输入功能
-    MotorSpeedPID_BL.Ki1 = 0.2/*Debug_Param().vel_ki*/;
-    //usart_printf("%.2f\r\n",MotorSpeedPID.Ki1);
-    MotorSpeedPID_BL.Kd1 = 0.5/*Debug_Param().vel_kd*/;
-    // usart_printf("%.2f\r\n",MotorSpeedPID.Kd1);
-//    MotorSpeedPID_F.PID_Target=20/*Debug_Param().vel_rampTargetValue*/;
+//    MotorSpeedPID_BL.Kp1 = /*1.1*/Debug_Param().vel_kp;
+//    //usart_printf("%.2f\r\n",MotorSpeedPID.Kp1);//调试外部输入功能
+//    MotorSpeedPID_BL.Ki1 = /*0.2*/Debug_Param().vel_ki;
+//    //usart_printf("%.2f\r\n",MotorSpeedPID.Ki1);
+//    MotorSpeedPID_BL.Kd1 = /*0.5*/Debug_Param().vel_kd;
+//    // usart_printf("%.2f\r\n",MotorSpeedPID.Kd1);
+//    MotorSpeedPID_BL.PID_Target=/*20*/Debug_Param().vel_rampTargetValue;
     //usart_printf("%.2f\r\n",MotorSpeedPID.PID_Target);
-
 
     Speed_BL=(float)TIM_GetEncorder(2);          //读取编码器数值
 
@@ -240,7 +245,7 @@ void Motor_SpeedC_BL(void)
     PID_GetPositionPID(&MotorPosPID_BL);
 
     //速度环PID
-    MotorSpeedPID_BL.PID_Target = MotorPosPID_BL.PID_Out;
+    MotorSpeedPID_BL.PID_Target = /*50*/MotorPosPID_BL.PID_Out;
     PID_Update(&MotorSpeedPID_BL, (float)Speed_BL);
     PID_GetPositionPID(&MotorSpeedPID_BL);
 
@@ -257,7 +262,7 @@ void Motor_SpeedC_BL(void)
         MotorSpeedPID_BL.PID_Out = MotorSpeedPID_BL.PID_Out;
     }
     // MotorSpeedPID.PID_Out = 200;
-//    usart_printf("%f,%f,%f,%d\r\n", MotorSpeedPID_BL.PID_Out, MotorSpeedPID_BL, MotorSpeedPID_BL.PID_Target,test_CNT_tim2);
+//    usart_printf("%f,%f,%f,%d\r\n", MotorSpeedPID_BL.PID_Out, Speed_BL, MotorSpeedPID_BL.PID_Target,test_CNT_tim2);
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, MotorSpeedPID_BL.PID_Out);
 
 
@@ -267,21 +272,22 @@ void Motor_SpeedC_BL(void)
 
 /**************/
 /*          电机配置           */
-/*            右后轮          */
+/*            右后轮  -      */
 /*     A:PA11                */
 /*     B:PA10                */
 /*    EA:PA6 ----> TIM3->CH1 */
 /*    EB:PA7 ----> TIM3->CH2 */
 /*   PWM:PB8 ----> TIM4->CH3 */
 /**************/
+
 void Motor_SpeedC_BR(void)
 {
-    float Speed_BR=0.0;
-    /*//速度环PID参数
-    MotorSpeedPID.Kp1 = 0.5;
-    MotorSpeedPID.Ki1 = 0;
-    MotorSpeedPID.Kd1 = 0;
-    //MotorSpeedPID.PID_Target = Debug_Param().pos_targetAngle; //速度环调试用*/
+
+    //速度环PID参数
+    MotorSpeedPID_BR.Kp1 = 3.1;
+    MotorSpeedPID_BR.Ki1 = 0.13;
+    MotorSpeedPID_BR.Kd1 = 0.05;
+    //MotorSpeedPID.PID_Target = Debug_Param().pos_targetAngle; //速度环调试用
     MotorSpeedPID_BR.PID_OutMax = 450;
 
     //位置环PID参数
@@ -289,17 +295,17 @@ void Motor_SpeedC_BR(void)
     MotorPosPID_BR.Ki1 = 0/*Debug_Param().vel_ki*/;
     MotorPosPID_BR.Kd1 = 0.3/*Debug_Param().vel_kd*/; //参数自己确定
     MotorPosPID_BR.PID_OutMax = 333;
-    MotorPosPID_BR.PID_Target = /*Debug_Param().vel_rampTargetValue*/SetPos_BR;
+    MotorPosPID_BR.PID_Target = SetPos_BR/*Debug_Param().vel_rampTargetValue*/;
 
     //利用VOFA+外部传输值进行实时调整参数
-    MotorSpeedPID_BR.Kp1 = 1.1/*Debug_Param().vel_kp*/;
-    //usart_printf("%.2f\r\n",MotorSpeedPID.Kp1);//调试外部输入功能
-    MotorSpeedPID_BR.Ki1 = 0.2/*Debug_Param().vel_ki*/;
-    //usart_printf("%.2f\r\n",MotorSpeedPID.Ki1);
-    MotorSpeedPID_BR.Kd1 = 0.5/*Debug_Param().vel_kd*/;
-    // usart_printf("%.2f\r\n",MotorSpeedPID.Kd1);
-//    MotorSpeedPID_F.PID_Target=20/*Debug_Param().vel_rampTargetValue*/;
-    //usart_printf("%.2f\r\n",MotorSpeedPID.PID_Target);
+//    MotorSpeedPID_BR.Kp1 = /*1.1*/Debug_Param().vel_kp;
+//    //usart_printf("%.2f\r\n",MotorSpeedPID.Kp1);//调试外部输入功能
+//    MotorSpeedPID_BR.Ki1 = /*0.2*/Debug_Param().vel_ki;
+//    //usart_printf("%.2f\r\n",MotorSpeedPID.Ki1);
+//    MotorSpeedPID_BR.Kd1 = /*0.5*/Debug_Param().vel_kd;
+//    // usart_printf("%.2f\r\n",MotorSpeedPID.Kd1);
+//    MotorSpeedPID_BR.PID_Target=/*20*/Debug_Param().vel_rampTargetValue;
+//    //usart_printf("%.2f\r\n",MotorSpeedPID.PID_Target);
 
 
     Speed_BR=(float)TIM_GetEncorder(3);          //读取编码器数值
@@ -310,7 +316,7 @@ void Motor_SpeedC_BR(void)
     PID_GetPositionPID(&MotorPosPID_BR);
 
     //速度环PID
-    MotorSpeedPID_BR.PID_Target = MotorPosPID_BR.PID_Out;
+    MotorSpeedPID_BR.PID_Target = /*-50*/MotorPosPID_BR.PID_Out;
     PID_Update(&MotorSpeedPID_BR, (float)Speed_BR);
     PID_GetPositionPID(&MotorSpeedPID_BR);
 
@@ -327,7 +333,7 @@ void Motor_SpeedC_BR(void)
         MotorSpeedPID_BR.PID_Out = MotorSpeedPID_BR.PID_Out;
     }
     // MotorSpeedPID.PID_Out = 200;
-//    usart_printf("%f,%f,%f,%d\r\n", MotorSpeedPID_BL.PID_Out, MotorSpeedPID_BL, MotorSpeedPID_BL.PID_Target,test_CNT_tim2);
+//    usart_printf("%f,%f,%f,%d\r\n", MotorSpeedPID_BR.PID_Out, Speed_BR, MotorSpeedPID_BR.PID_Target,test_CNT_tim3);
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, MotorSpeedPID_BR.PID_Out);
 
 

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj.d"
   "CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj"
   "CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj.d"
+  "CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj"
+  "CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj.d"
   "CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj"
   "CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj.d"
   "CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj"

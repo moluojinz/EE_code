@@ -62,4 +62,5 @@ CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj: \
  d:\enviro~1\gcc-ar~1\102021~1.10\arm-none-eabi\include\sys\stdio.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\encoder.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\motor.h \
- D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\pid.h
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\pid.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\openmv.h

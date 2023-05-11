@@ -109,7 +109,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
+//      usart_printf("%d\r\n",1);
+//      HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+//      HAL_Delay(500);
+//TIM4->CCR1=300;
+//TIM4->CCR2=300;
+//TIM4->CCR3=300;
   }
   /* USER CODE END 3 */
 }
