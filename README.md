@@ -1,6 +1,6 @@
 **SCU 2023 电赛校内选拔赛  ---->23.5.20**
 
-![IMG_20230511_161039](D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\ourCAR.jpg)
+![Alt](ourCAR.jpg)
 
 Yap!Car with three wheels!
 
