@@ -12,7 +12,7 @@ float   update_Des(float set);
 void    CAR_spin(float des);
 void    CAR_longitudinal(float des);
 void    CAR_transverse(float des);
-
+void    motor_control(void);
 
 
 #endif //EE_CODE_MOTOR_H

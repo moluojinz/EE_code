@@ -26,14 +26,17 @@ uint8_t uart3_rxbuff;
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     uint16_t tem;
-    if(huart->Instance== USART3)
+    if(huart->Instance== USART2)
     {
         tem = uart3_rxbuff;
         Openmv_Receive_Data(tem);
     }
-    HAL_UART_Receive_IT(&huart3,(void *)&uart3_rxbuff,1);
+    HAL_UART_Receive_IT(&huart2,(void *)&uart3_rxbuff,1);
 }
-
+void openmv_Init(void)
+{
+    HAL_UART_Receive_IT(&huart2,(void *)&uart3_rxbuff,1);
+}
 
 void   Openmv_Receive_Data(int16_t com_data)
 {
@@ -122,7 +125,7 @@ void   Openmv_Receive_Data(int16_t com_data)
   */
 int fputc(int ch, FILE *f)
 {
-    HAL_UART_Transmit(&huart3, (uint8_t *)&ch, 1, 0xffff);
+    HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xffff);
     return ch;
 }
 
@@ -135,6 +138,6 @@ int fputc(int ch, FILE *f)
 int fgetc(FILE *f)
 {
     uint8_t ch = 0;
-    HAL_UART_Receive(&huart3, &ch, 1, 0xffff);
+    HAL_UART_Receive(&huart2, &ch, 1, 0xffff);
     return ch;
 }

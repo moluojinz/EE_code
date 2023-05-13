@@ -8,6 +8,8 @@
 #include "stm32f1xx_hal.h"
 
 void  Openmv_Receive_Data(int16_t data);
+void openmv_Init(void);
+
 
 extern uint8_t  Cx, Cy, Cw, Ch;
 

@@ -100,6 +100,9 @@ int main(void)
   DEBUGC_UartInit();
   encoder_Init();
   TIM_StartEncorder();
+  openmv_Init();
+  HAL_Delay(5000);
+  motor_control();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,12 +112,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//      usart_printf("%d\r\n",1);
-//      HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-//      HAL_Delay(500);
-//TIM4->CCR1=300;
-//TIM4->CCR2=300;
-//TIM4->CCR3=300;
+
   }
   /* USER CODE END 3 */
 }
