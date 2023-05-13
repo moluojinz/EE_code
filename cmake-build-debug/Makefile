@@ -272,6 +272,54 @@ Core/BSP/pid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.s
 .PHONY : Core/BSP/pid.c.s
 
+Core/BSP/tof.obj: Core/BSP/tof.c.obj
+.PHONY : Core/BSP/tof.obj
+
+# target to build an object file
+Core/BSP/tof.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj
+.PHONY : Core/BSP/tof.c.obj
+
+Core/BSP/tof.i: Core/BSP/tof.c.i
+.PHONY : Core/BSP/tof.i
+
+# target to preprocess a source file
+Core/BSP/tof.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.i
+.PHONY : Core/BSP/tof.c.i
+
+Core/BSP/tof.s: Core/BSP/tof.c.s
+.PHONY : Core/BSP/tof.s
+
+# target to generate assembly for a file
+Core/BSP/tof.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.s
+.PHONY : Core/BSP/tof.c.s
+
+Core/BSP/tof_usart.obj: Core/BSP/tof_usart.c.obj
+.PHONY : Core/BSP/tof_usart.obj
+
+# target to build an object file
+Core/BSP/tof_usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj
+.PHONY : Core/BSP/tof_usart.c.obj
+
+Core/BSP/tof_usart.i: Core/BSP/tof_usart.c.i
+.PHONY : Core/BSP/tof_usart.i
+
+# target to preprocess a source file
+Core/BSP/tof_usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.i
+.PHONY : Core/BSP/tof_usart.c.i
+
+Core/BSP/tof_usart.s: Core/BSP/tof_usart.c.s
+.PHONY : Core/BSP/tof_usart.s
+
+# target to generate assembly for a file
+Core/BSP/tof_usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.s
+.PHONY : Core/BSP/tof_usart.c.s
+
 Core/Src/dma.obj: Core/Src/dma.c.obj
 .PHONY : Core/Src/dma.obj
 
@@ -883,6 +931,12 @@ help:
 	@echo ... Core/BSP/pid.obj
 	@echo ... Core/BSP/pid.i
 	@echo ... Core/BSP/pid.s
+	@echo ... Core/BSP/tof.obj
+	@echo ... Core/BSP/tof.i
+	@echo ... Core/BSP/tof.s
+	@echo ... Core/BSP/tof_usart.obj
+	@echo ... Core/BSP/tof_usart.i
+	@echo ... Core/BSP/tof_usart.s
 	@echo ... Core/Src/dma.obj
 	@echo ... Core/Src/dma.i
 	@echo ... Core/Src/dma.s

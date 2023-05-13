@@ -11,6 +11,8 @@
 #include "motor.h"
 #include "pid.h"
 #include "openmv.h"
+#include "tof.h"
+#include "tof_usart.h"
 
 
 #endif //EE_CODE_BSP_HEADFILE_H

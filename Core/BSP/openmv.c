@@ -7,32 +7,22 @@
 #include "stm32f1xx_hal.h"
 
 
-uint8_t  Cx=0, Cy=0, Cw=0, Ch=0;
+int8_t  mv_Cx=0, mv_Cy=0, mv_Cw=0, mv_Ch=0;
 
-//void DEBUGC_UartIrqHandler(UART_HandleTypeDef* huart)
-//{
-//    if (huart->Instance == USART3)                                   //判断是否是串口6
-//    {
-//        if (__HAL_UART_GET_FLAG(huart, UART_FLAG_IDLE)!= RESET)   //判断是否是空闲中断
-//        {
-//            __HAL_UART_CLEAR_IDLEFLAG(huart);                     //清楚空闲中断标志（否则会一直不断进入中断）
-//            DEBUGC_UartIdleCallback(huart);                          //调用中断处理函数
-//        }
-//    }
-//}
+
 //float   error_to_target;
 //float   distance_to_target;
-uint8_t uart3_rxbuff;
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-    uint16_t tem;
-    if(huart->Instance== USART2)
-    {
-        tem = uart3_rxbuff;
-        Openmv_Receive_Data(tem);
-    }
-    HAL_UART_Receive_IT(&huart2,(void *)&uart3_rxbuff,1);
-}
+int8_t uart3_rxbuff;
+//void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+//{
+//    int16_t tem;
+//    if(huart->Instance== USART2)
+//    {
+//        tem = uart3_rxbuff;
+//        Openmv_Receive_Data(tem);
+//    }
+//    HAL_UART_Receive_IT(&huart2,(void *)&uart3_rxbuff,1);
+//}
 void openmv_Init(void)
 {
     HAL_UART_Receive_IT(&huart2,(void *)&uart3_rxbuff,1);
@@ -43,7 +33,7 @@ void   Openmv_Receive_Data(int16_t com_data)
 
     uint8_t i;
     static uint8_t RxCounter1=0;//计数
-    static uint16_t RxBuffer1[10]={0};
+    static int16_t RxBuffer1[10]={0};
     static uint8_t RxState = 0;
     static uint8_t RxFlag1 = 0;
 
@@ -70,10 +60,10 @@ void   Openmv_Receive_Data(int16_t com_data)
             RxState=3;
             RxFlag1=1;
 
-            Cx=RxBuffer1[RxCounter1-5];
-            Cy=RxBuffer1[RxCounter1-4];
-            Cw=RxBuffer1[RxCounter1-3];
-            Ch=RxBuffer1[RxCounter1-2];
+            mv_Cx=RxBuffer1[RxCounter1-5];
+            mv_Cy=RxBuffer1[RxCounter1-4];
+            mv_Cw=RxBuffer1[RxCounter1-3];
+            mv_Ch=RxBuffer1[RxCounter1-2];
 //               if(RxState==1)
 //          {
 //            HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);

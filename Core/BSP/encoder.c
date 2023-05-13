@@ -11,7 +11,7 @@
 #include "openmv.h"
 //#include "stm32f1xx_hal_gpio.h"
 #include "main.h"
-
+uint8_t run_flag;
 float SetSpd_F, SetSpd_BL, SetSpd_BR;     //设置转速
 float SetPos_F, SetPos_BL, SetPos_BR;     //设置位置环
 float Speed_BL = 0.0;
@@ -42,9 +42,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         Motor_SpeedC_F();
         Motor_SpeedC_BL();
         Motor_SpeedC_BR();
-//        usart_printf("%d,%d,%d,%d\r\n", Cx, Cy, Cw, Ch);
+//        usart_printf("%d,%d,%d,%d\r\n", mv_Cx, mv_Cy, mv_Cw, mv_Ch);
+//        tof_run();
 //        TIMER++;
-		usart_printf("%.3f,%.3f\r\n",Speed_BL,Speed_BR);
+//		usart_printf("%.3f,%.3f,%d\r\n",Position_F,Speed_BR,run_flag);
+        usart_printf("%d\r\n",tof_data);
+        run_flag=Debug_Param().vel_kp;
     }
 }
 

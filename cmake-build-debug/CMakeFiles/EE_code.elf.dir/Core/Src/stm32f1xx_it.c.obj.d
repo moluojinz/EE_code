@@ -61,4 +61,13 @@ CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj: \
  d:\enviro~1\gcc-ar~1\102021~1.10\arm-none-eabi\include\machine\types.h \
  d:\enviro~1\gcc-ar~1\102021~1.10\arm-none-eabi\include\sys\stdio.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Inc/usart.h \
- D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Inc/main.h
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Inc/main.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/bsp_headfile.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/mp3.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/debugc.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/encoder.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/pid.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/motor.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/openmv.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/tof.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/tof_usart.h

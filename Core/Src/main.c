@@ -98,11 +98,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim4);
   DEBUGC_UartInit();
+//    TOF_UartInit();
   encoder_Init();
   TIM_StartEncorder();
-  openmv_Init();
+//  openmv_Init();
+ TOF_UartInit();
   HAL_Delay(5000);
-  motor_control();
+//  motor_control();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -112,7 +114,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
+//      motor_control();
+//      usart_printf("%d\r\n",1);
+//      tof_run();
+      HAL_Delay(500);
+//      motor_control();
   }
   /* USER CODE END 3 */
 }

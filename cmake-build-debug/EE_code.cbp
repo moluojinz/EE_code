@@ -143,6 +143,18 @@
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/pid.h">
 			<Option target="EE_code.elf"/>
 		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof_usart.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof_usart.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/dma.h">
 			<Option target="EE_code.elf"/>
 		</Unit>
