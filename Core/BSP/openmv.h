@@ -11,7 +11,7 @@ void  Openmv_Receive_Data(int16_t data);
 void openmv_Init(void);
 
 
-extern uint8_t  Cx, Cy, Cw, Ch;
+extern uint8_t  Cx, Cy, Cw, Ch;   //Cx:左右偏差 左- 右+   Cy:摄像头到物体distance
 
 
 

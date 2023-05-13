@@ -6,7 +6,7 @@
 
 float update_Des(float set)         //位置环参数转换
 {
-    set = set * 1320 / 7;
+    set = set * 1320 / 7 / PI;
     return set;
 }
 
@@ -15,7 +15,7 @@ float update_Des(float set)         //位置环参数转换
 /******************/
 void CAR_spin(float des) {
     SetPos_F += des;
-    SetPos_BR += des;
+    SetPos_BR -= des;
     SetPos_BL += des;
     MotorPosPID_F.PID_OutMax = 200;
     MotorPosPID_BL.PID_OutMax = 200;
@@ -51,9 +51,11 @@ void CAR_transverse(float des) {
 
 
 void motor_control(void) {
-    CAR_longitudinal(7);
-//    HAL_Delay(10000);
-//    CAR_transverse(55);
-//    HAL_Delay(10000);
-//    CAR_longitudinal(-105);
+//    CAR_longitudinal(7);
+//    CAR_longitudinal(110);
+//    HAL_Delay(6000);
+//    CAR_transverse(-55);
+//    HAL_Delay(6000);
+//    CAR_longitudinal(-110);
+    CAR_spin(oneTURN);
 }
