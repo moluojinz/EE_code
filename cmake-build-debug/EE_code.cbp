@@ -101,6 +101,12 @@
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/Kinematic_analysis.md">
 			<Option target="EE_code.elf"/>
 		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.c">
+			<Option target="EE_code.elf"/>
+		</Unit>
+		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.h">
+			<Option target="EE_code.elf"/>
+		</Unit>
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/analyize.jpg">
 			<Option target="EE_code.elf"/>
 		</Unit>
@@ -150,9 +156,6 @@
 			<Option target="EE_code.elf"/>
 		</Unit>
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof_usart.c">
-			<Option target="EE_code.elf"/>
-		</Unit>
-		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof_usart.h">
 			<Option target="EE_code.elf"/>
 		</Unit>
 		<Unit filename="D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/dma.h">

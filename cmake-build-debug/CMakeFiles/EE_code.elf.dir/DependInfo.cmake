@@ -31,6 +31,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/debugc.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/encoder.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj.d"
   "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.c" "CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj" "gcc" "CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj.d"

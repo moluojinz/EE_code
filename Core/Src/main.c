@@ -104,6 +104,8 @@ int main(void)
 //  openmv_Init();
  TOF_UartInit();
   HAL_Delay(5000);
+//    tb_BEEP_start();
+//    tb_LED_start();
 //  motor_control();
   /* USER CODE END 2 */
 
@@ -114,10 +116,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//      motor_control();
+//      motor_secondstage_control();
 //      usart_printf("%d\r\n",1);
 //      tof_run();
-      HAL_Delay(500);
+//    tb_LED_start();
 //      motor_control();
   }
   /* USER CODE END 3 */

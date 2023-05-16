@@ -91,6 +91,10 @@ void Error_Handler(void);
 #define BRIN_B_GPIO_Port GPIOA
 #define BRIN_A_Pin GPIO_PIN_11
 #define BRIN_A_GPIO_Port GPIOA
+#define tb_LED_Pin GPIO_PIN_3
+#define tb_LED_GPIO_Port GPIOB
+#define BEEP_Pin GPIO_PIN_4
+#define BEEP_GPIO_Port GPIOB
 #define PWM_F_Pin GPIO_PIN_6
 #define PWM_F_GPIO_Port GPIOB
 #define PWM_BL_Pin GPIO_PIN_7

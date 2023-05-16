@@ -33,7 +33,6 @@ CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj: \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim_ex.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_uart.h \
- D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof_usart.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof.h \
  d:\enviro~1\gcc-ar~1\102021~1.10\arm-none-eabi\include\string.h \
  d:\enviro~1\gcc-ar~1\102021~1.10\arm-none-eabi\include\_ansi.h \

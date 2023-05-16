@@ -8,10 +8,9 @@
 
 
 int8_t  mv_Cx=0, mv_Cy=0, mv_Cw=0, mv_Ch=0;
+int16_t error_angle,distance_target;
 
 
-//float   error_to_target;
-//float   distance_to_target;
 int8_t uart3_rxbuff;
 //void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 //{
@@ -64,6 +63,9 @@ void   Openmv_Receive_Data(int16_t com_data)
             mv_Cy=RxBuffer1[RxCounter1-4];
             mv_Cw=RxBuffer1[RxCounter1-3];
             mv_Ch=RxBuffer1[RxCounter1-2];
+
+            error_angle=mv_Cy;
+            distance_target=mv_Cy;
 //               if(RxState==1)
 //          {
 //            HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);

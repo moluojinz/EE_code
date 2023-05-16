@@ -128,6 +128,30 @@ EE_code.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/build
 .PHONY : EE_code.elf/fast
 
+Core/BSP/LED_BEEP.obj: Core/BSP/LED_BEEP.c.obj
+.PHONY : Core/BSP/LED_BEEP.obj
+
+# target to build an object file
+Core/BSP/LED_BEEP.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj
+.PHONY : Core/BSP/LED_BEEP.c.obj
+
+Core/BSP/LED_BEEP.i: Core/BSP/LED_BEEP.c.i
+.PHONY : Core/BSP/LED_BEEP.i
+
+# target to preprocess a source file
+Core/BSP/LED_BEEP.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.i
+.PHONY : Core/BSP/LED_BEEP.c.i
+
+Core/BSP/LED_BEEP.s: Core/BSP/LED_BEEP.c.s
+.PHONY : Core/BSP/LED_BEEP.s
+
+# target to generate assembly for a file
+Core/BSP/LED_BEEP.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.s
+.PHONY : Core/BSP/LED_BEEP.c.s
+
 Core/BSP/debugc.obj: Core/BSP/debugc.c.obj
 .PHONY : Core/BSP/debugc.obj
 
@@ -913,6 +937,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... EE_code.elf
+	@echo ... Core/BSP/LED_BEEP.obj
+	@echo ... Core/BSP/LED_BEEP.i
+	@echo ... Core/BSP/LED_BEEP.s
 	@echo ... Core/BSP/debugc.obj
 	@echo ... Core/BSP/debugc.i
 	@echo ... Core/BSP/debugc.s

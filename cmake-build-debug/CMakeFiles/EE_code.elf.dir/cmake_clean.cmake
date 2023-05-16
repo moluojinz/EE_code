@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj"
+  "CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj.d"
   "CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj"
   "CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj.d"
   "CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj"

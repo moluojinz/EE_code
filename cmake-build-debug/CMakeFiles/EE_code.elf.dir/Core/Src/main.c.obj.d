@@ -71,4 +71,4 @@ CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj: \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/motor.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/openmv.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/tof.h \
- D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/tof_usart.h
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP/LED_BEEP.h
