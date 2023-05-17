@@ -34,4 +34,5 @@ CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj: \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim_ex.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_uart.h \
  D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Inc/gpio.h \
- D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Inc/main.h
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Inc/main.h \
+ D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\LED_BEEP.h

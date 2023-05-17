@@ -5,6 +5,7 @@
 #include "tof.h"
 #include "string.h"
 #include "usart.h"
+#include "bsp_headfile.h"
 
 #define TX_BUF_SIZE 128
 #define tof_rxbuf_size 128
@@ -80,6 +81,7 @@ void   tof_Receive_Data(int16_t com_data) {
             RxCounter1 = 0;
             RxState = 0;
             tof_data = tof_Cx*1000+tof_Cy*100+tof_Cz*10+tof_Cw;
+            if(tof_data<=(tof_distance_th+5)&&tof_data>=(tof_distance_th-5))    tof_data=200;
         } else if (RxCounter1 > 7) {
             RxState = 0;
             RxCounter1 = 0;

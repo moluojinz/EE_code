@@ -111,8 +111,8 @@ float PID_GetIncrementalPID(PID_t* WhichPID)//用不了
 
 void PID_SpeedParamInit(PID_t* WhichPID)
 { //初始化PID的默认参数
-    WhichPID->Kp1 = 10.0;
-    WhichPID->Ki1 = 0.1;
+    WhichPID->Kp1 = 0.0;
+    WhichPID->Ki1 = 0.0;
     WhichPID->Kd1 = 0;
     WhichPID->PID_Err_now = 0.0;
     WhichPID->PID_Err_last = 0.0;

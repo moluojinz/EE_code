@@ -44,7 +44,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         Motor_SpeedC_BR();
 //        usart_printf("%d,%d,%d,%d\r\n", Cx, Cy, Cw, Ch);
 //        TIMER++;
-		usart_printf("%.3f,%.3f\r\n",Speed_BL,Speed_BR);
+//		usart_printf("%.3f,%.3f\r\n",Speed_BL,Speed_BR);
     }
 }
 

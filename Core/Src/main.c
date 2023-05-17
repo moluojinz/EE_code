@@ -103,7 +103,8 @@ int main(void)
   TIM_StartEncorder();
 //  openmv_Init();
  TOF_UartInit();
-  HAL_Delay(5000);
+  HAL_Delay(2000);
+    motor_Init();
 //    tb_BEEP_start();
 //    tb_LED_start();
 //  motor_control();
@@ -116,11 +117,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//      motor_secondstage_control();
-//      usart_printf("%d\r\n",1);
-//      tof_run();
-//    tb_LED_start();
-//      motor_control();
+
+//      motor_tof_test();
   }
   /* USER CODE END 3 */
 }

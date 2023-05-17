@@ -36,7 +36,8 @@ CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj: D:/A_moluo_document/SCU_SMAR
   D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
   D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/gpio.h \
-  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/main.h
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/main.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.h
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/debugc.c \
   D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/debugc.h \
@@ -433,7 +434,29 @@ CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj: D:/A_moluo_document/SCU_SMARTCAR/
   D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/strings.h \
   D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/string.h \
   D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/usart.h \
-  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/main.h
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Inc/main.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/bsp_headfile.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/mp3.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/debugc.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/stdio.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/types.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/machine/endian.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/machine/_endian.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/select.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/_sigset.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/_timeval.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/timespec.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/_timespec.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/sched.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/machine/types.h \
+  D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/stdio.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/encoder.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/pid.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/openmv.h \
+  D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.h
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof_usart.c
 
@@ -1389,10 +1412,6 @@ D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/inclu
 
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
 
-D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/stdlib.h:
-
-D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/strings.h:
-
 D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/timespec.h:
 
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/CMSIS/Include/core_cm3.h:
@@ -1440,6 +1459,8 @@ D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Dri
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
 
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
+
+D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.h:
 
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/syscalls.c:
 
@@ -1493,6 +1514,10 @@ D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/inclu
 
 D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/stdio.h:
 
+D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/stdlib.h:
+
+D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/strings.h:
+
 D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/sys/string.h:
 
 D:/environment_for_clion_stm32/gcc-arm-none-eabi/10\ 2021.10/arm-none-eabi/include/machine/stdlib.h:
@@ -1520,8 +1545,6 @@ D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.h:
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/openmv.h:
 
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof.h:
-
-D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.h:
 
 D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.c:
 
