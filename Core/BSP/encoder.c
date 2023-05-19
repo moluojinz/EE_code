@@ -42,9 +42,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         Motor_SpeedC_F();
         Motor_SpeedC_BL();
         Motor_SpeedC_BR();
-//        usart_printf("%d,%d,%d,%d\r\n", Cx, Cy, Cw, Ch);
 //        TIMER++;
-//		usart_printf("%.3f,%.3f\r\n",Speed_BL,Speed_BR);
+//		usart_printf("%d,%d\r\n",1,1);
+//        usart_printf("%d,%d,%d,%d\r\n", error_angle, distance_target, spin_flag, stop_flag);
     }
 }
 
@@ -175,6 +175,7 @@ void Motor_SpeedC_F(void) {
 
     //速度环PID
     MotorSpeedPID_F.PID_Target = /*50*/MotorPosPID_F.PID_Out;
+//    MotorSpeedPID_F.PID_Target = SetSpd_F;//速度环调试
     PID_Update(&MotorSpeedPID_F, (float) Speed_F);
     PID_GetPositionPID(&MotorSpeedPID_F);
 
@@ -240,6 +241,7 @@ void Motor_SpeedC_BL(void) {
 
     //速度环PID
     MotorSpeedPID_BL.PID_Target = /*50*/MotorPosPID_BL.PID_Out;
+//    MotorSpeedPID_BL.PID_Target = SetSpd_BL;
     PID_Update(&MotorSpeedPID_BL, (float) Speed_BL);
     PID_GetPositionPID(&MotorSpeedPID_BL);
 
@@ -307,6 +309,7 @@ void Motor_SpeedC_BR(void) {
 
     //速度环PID
     MotorSpeedPID_BR.PID_Target = /*-50*/MotorPosPID_BR.PID_Out;
+//    MotorSpeedPID_BR.PID_Target =SetSpd_BR;
     PID_Update(&MotorSpeedPID_BR, (float) Speed_BR);
     PID_GetPositionPID(&MotorSpeedPID_BR);
 

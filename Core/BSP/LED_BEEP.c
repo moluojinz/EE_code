@@ -7,6 +7,7 @@
 
 void tb_LED_start(void) {
     HAL_GPIO_WritePin(tb_LED_GPIO_Port,tb_LED_Pin,GPIO_PIN_SET);
+    HAL_GPIO_WritePin(BEEP_GPIO_Port,BEEP_Pin,GPIO_PIN_SET);
 }
 
 void tb_stop(void) {
@@ -15,5 +16,5 @@ void tb_stop(void) {
 }
 
 void tb_BEEP_start(void){
-    HAL_GPIO_WritePin(BEEP_GPIO_Port,BEEP_Pin,GPIO_PIN_SET);
+
 }

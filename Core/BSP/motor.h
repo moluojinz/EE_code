@@ -21,6 +21,9 @@ void    motor_thirdstage_control(void);
 void    motor_spin_test(void);
 void    motor_close_test(void);
 void    motor_tof_test(void);
+void    motor_detectflag(void);
+void    motor_test_control(void);
+
 
 extern PID_t mv_measure;
 extern PID_t tof_measure;
@@ -28,7 +31,7 @@ extern uint8_t spin_flag;
 extern uint8_t second_flag;
 extern PID_t dis_target;
 
-#define tof_distance_th     (10*20)     //(10*X)    X为距离，单位为cm
+#define tof_distance_th     (10*35)     //(10*X)    X为距离，单位为cm
 
 
 

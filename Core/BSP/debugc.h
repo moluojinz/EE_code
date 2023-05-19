@@ -59,5 +59,6 @@ typedef struct {
 //};
 DebugParam Debug_Param();
 void usart_printf(const char *format, ...);
+
 void DEBUGC_UartInit(void);
 #endif //EE_CODE_DEBUGC_H

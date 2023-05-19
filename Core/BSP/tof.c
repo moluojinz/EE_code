@@ -7,8 +7,7 @@
 #include "usart.h"
 #include "bsp_headfile.h"
 
-#define TX_BUF_SIZE 128
-#define tof_rxbuf_size 128
+
 uint8_t tof_send_buf[TX_BUF_SIZE];
 uint8_t tof_Cx,tof_Cy,tof_Cz,tof_Cw;
 uint32_t tof_data;
@@ -17,19 +16,19 @@ char tofBuff[tof_rxbuf_size] = { 0 };    //进行一定变换
 
 int16_t tof_start_flag = 0;
 uint8_t tof_rxbuff;
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-    int16_t tem;
-    if(huart->Instance== USART2)
-    {
-        tem = tof_rxbuff;
-        tof_Receive_Data(tem);
-    }
-    HAL_UART_Receive_IT(&huart2,(void *)&tof_rxbuff,1);
-}
+//void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+//{
+//    int16_t tem;
+//    if(huart->Instance== USART3)
+//    {
+//        tem = tof_rxbuff;
+//        tof_Receive_Data(tem);
+//    }
+//    HAL_UART_Receive_IT(&huart3,(void *)&tof_rxbuff,1);
+//}
 void TOF_UartInit(void)
 {
-    HAL_UART_Receive_IT(&huart2, (void*)&tofRvBuff, 1);
+    HAL_UART_Receive_IT(&huart3, (void*)&tofRvBuff, 1);
 }
 
 void   tof_Receive_Data(int16_t com_data) {
@@ -81,7 +80,7 @@ void   tof_Receive_Data(int16_t com_data) {
             RxCounter1 = 0;
             RxState = 0;
             tof_data = tof_Cx*1000+tof_Cy*100+tof_Cz*10+tof_Cw;
-            if(tof_data<=(tof_distance_th+5)&&tof_data>=(tof_distance_th-5))    tof_data=200;
+            if(tof_data<=(tof_distance_th+10)&&tof_data>=(tof_distance_th-10))    tof_data=tof_distance_th;
         } else if (RxCounter1 > 7) {
             RxState = 0;
             RxCounter1 = 0;

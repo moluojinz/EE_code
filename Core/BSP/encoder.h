@@ -19,7 +19,10 @@ void encoder_Init(void);
 
 extern uint8_t run_flag;
 extern float SetPos_F,SetPos_BL,SetPos_BR;
-extern uint32_t Set_L,Set_R;
+extern float SetSpd_F, SetSpd_BL, SetSpd_BR;     //设置转速
 extern PID_t MotorPosPID_F, MotorPosPID_BL, MotorPosPID_BR;
+extern float Speed_BL;
+extern float Speed_BR;
+extern float Speed_F;
 
 #endif //EE_CODE_ENCODER_H

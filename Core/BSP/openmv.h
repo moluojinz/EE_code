@@ -15,6 +15,6 @@ void openmv_Init(void);
 
 extern int8_t mv_Cx, mv_Cy, mv_Cw, mv_Ch;   //Cx:左右偏差 左- 右+   Cy:摄像头到物体distance
 extern int16_t error_angle,distance_target;
-
+extern uint8_t stop_flag;
 
 #endif //EE_CODE_OPENMV_H
