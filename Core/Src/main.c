@@ -104,7 +104,7 @@ int main(void) {
     TOF_UartInit();
     HAL_Delay(2000);
     motor_Init();
-    second_flag = 1;
+//    second_flag = 1;
     /* USER CODE END 2 */
 
     /* Infinite loop */
