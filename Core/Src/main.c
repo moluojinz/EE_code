@@ -96,15 +96,16 @@ int main(void) {
     MX_USART3_UART_Init();
     /* USER CODE BEGIN 2 */
     HAL_TIM_Base_Start_IT(&htim4);
-//    DEBUGC_UartInit();
+    DEBUGC_UartInit();
 
     encoder_Init();
     TIM_StartEncorder();
     openmv_Init();
-    TOF_UartInit();
+    openmv2_Init();
+//    TOF_UartInit();
+    WIT_sensor_USART_Init(&WT9011G4K_data);
     HAL_Delay(2000);
     motor_Init();
-//    second_flag = 1;
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -113,10 +114,9 @@ int main(void) {
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
-        motor_firststage_control();
-        motor_secondstage_control();
-        motor_thirdstage_control();
-
+//        CAR_SPD_spin();
+//        CAR_liner(0,50,0);
+//        HAL_Delay(1000);
     }
     /* USER CODE END 3 */
 }

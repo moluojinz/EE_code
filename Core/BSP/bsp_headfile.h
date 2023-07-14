@@ -13,6 +13,6 @@
 #include "openmv.h"
 #include "tof.h"
 #include "LED_BEEP.h"
-
+#include "WIT_sensor.h"
 
 #endif //EE_CODE_BSP_HEADFILE_H

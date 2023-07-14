@@ -45,6 +45,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 //        TIMER++;
 //		usart_printf("%d,%d\r\n",1,1);
 //        usart_printf("%d,%d,%d,%d\r\n", error_angle, distance_target, spin_flag, stop_flag);
+        usart_printf("%d\r\n",1);
     }
 }
 
@@ -131,7 +132,7 @@ static int8_t flag = 0;
 
 /**************/
 /*          电机配置           */
-/*            后轮            */
+/*            后F轮           */
 /*     A:PB15                */
 /*     B:PB14                */
 /*    EA:PA9 ----> TIM1->CH2 */
@@ -153,7 +154,7 @@ void Motor_SpeedC_F(void) {
     MotorPosPID_F.Ki1 = 0/*Debug_Param().vel_ki*/;
     MotorPosPID_F.Kd1 = 0.3/*Debug_Param().vel_kd*/; //参数自己确定
 //    MotorPosPID_F.PID_OutMax = 333;
-    MotorPosPID_F.PID_Target = update_Des(SetPos_F)/*Debug_Param().vel_rampTargetValueDebug_Param().vel_ki*/;
+    MotorPosPID_F.PID_Target = update_Des(-SetPos_F)/*Debug_Param().vel_rampTargetValueDebug_Param().vel_ki*/;
 
     //利用VOFA+外部传输值进行实时调整参数
     MotorSpeedPID_F.Kp1 = 3/*Debug_Param().vel_kp*/;
@@ -174,8 +175,8 @@ void Motor_SpeedC_F(void) {
     PID_GetPositionPID(&MotorPosPID_F);
 
     //速度环PID
-    MotorSpeedPID_F.PID_Target = /*50*/MotorPosPID_F.PID_Out;
-//    MotorSpeedPID_F.PID_Target = SetSpd_F;//速度环调试
+//    MotorSpeedPID_F.PID_Target = /*50*/MotorPosPID_F.PID_Out;
+    MotorSpeedPID_F.PID_Target = -SetSpd_F;//速度环调试
     PID_Update(&MotorSpeedPID_F, (float) Speed_F);
     PID_GetPositionPID(&MotorSpeedPID_F);
 
@@ -220,7 +221,7 @@ void Motor_SpeedC_BL(void) {
     MotorPosPID_BL.Ki1 = 0/*Debug_Param().vel_ki*/;
     MotorPosPID_BL.Kd1 = 0.3/*Debug_Param().vel_kd*/; //参数自己确定
 //    MotorPosPID_BL.PID_OutMax = 333;
-    MotorPosPID_BL.PID_Target = update_Des(SetPos_BL)/*Debug_Param().vel_kdDebug_Param().vel_rampTargetValue*/;
+    MotorPosPID_BL.PID_Target = update_Des(-SetPos_BL)/*Debug_Param().vel_kdDebug_Param().vel_rampTargetValue*/;
 
     //利用VOFA+外部传输值进行实时调整参数
 //    MotorSpeedPID_BL.Kp1 = /*1.1*/Debug_Param().vel_kp;
@@ -240,8 +241,8 @@ void Motor_SpeedC_BL(void) {
     PID_GetPositionPID(&MotorPosPID_BL);
 
     //速度环PID
-    MotorSpeedPID_BL.PID_Target = /*50*/MotorPosPID_BL.PID_Out;
-//    MotorSpeedPID_BL.PID_Target = SetSpd_BL;
+//    MotorSpeedPID_BL.PID_Target = /*50*/MotorPosPID_BL.PID_Out;
+    MotorSpeedPID_BL.PID_Target = -SetSpd_BL;
     PID_Update(&MotorSpeedPID_BL, (float) Speed_BL);
     PID_GetPositionPID(&MotorSpeedPID_BL);
 
@@ -308,8 +309,8 @@ void Motor_SpeedC_BR(void) {
     PID_GetPositionPID(&MotorPosPID_BR);
 
     //速度环PID
-    MotorSpeedPID_BR.PID_Target = /*-50*/MotorPosPID_BR.PID_Out;
-//    MotorSpeedPID_BR.PID_Target =SetSpd_BR;
+//    MotorSpeedPID_BR.PID_Target = /*-50*/MotorPosPID_BR.PID_Out;
+    MotorSpeedPID_BR.PID_Target =SetSpd_BR;
     PID_Update(&MotorSpeedPID_BR, (float) Speed_BR);
     PID_GetPositionPID(&MotorSpeedPID_BR);
 
