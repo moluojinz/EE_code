@@ -3,6 +3,7 @@
 //
 #include "bsp_headfile.h"
 #include "motor.h"
+#include "math.h"
 
 uint8_t first_flag = 0;
 PID_t mv_measure;
@@ -28,10 +29,10 @@ uint32_t count_tof;
 #define motor_stop_s    (Speed_F<=1&&Speed_F>=-1&&Speed_BR<=1&&Speed_BR>=-1&&Speed_BL<=1&&Speed_BL>=-1)
 
 void motor_Init(void) {
+/*****校赛参数初始化**************/
     first_flag = 1;
     spin_flag = 0;
     second_flag = 0;
-    record_spin = 0;
     count_pid = 0;
     close_flag = 0;
     count_spin = 0;
@@ -41,7 +42,11 @@ void motor_Init(void) {
     third_flag = 0;
     tof_flag = 0;
     count_tof = 0;
+/*****校赛**************/
 
+/*****国赛初始化**************/
+
+/*****国赛**************/
 
     PID_SpeedParamInit(&mv_measure);
     PID_SpeedParamInit(&tof_measure);
@@ -51,6 +56,33 @@ void motor_Init(void) {
     tof_measure.PID_OutMax = 10;
 }
 
+/****************************SPD********************************/
+/*******线性代数公式集成********/
+/*   车身逆时针自转为正   */
+/*  Vx       -2/3        1/3          1/3            Vf    */
+/*[ Vy ] = [   0      -(3^(1/2))/3  (3^(1/2)/3 ] * [ Vbl ] */
+/*  W       1/(3*a)    1/(3*a)       1/(3*a)         Vbr   */
+/*Vx > 0 =====>  right*/
+/*Vy > 0 =====>  forward*/
+/*W  > 0 =====>  counterclockwise*/
+/*a为轮轴到机器中心的距离*/
+/*开启速度环控制*/
+/******************/
+#define a (oneTURN/(M_PI*2))
+
+void CAR_liner(float Vx, float Vy, float W) {
+    SetSpd_F = a * W - Vx;
+    SetSpd_BL = a * W + Vx / 2 - Vy * sqrt(3) / 2;
+    SetSpd_BR = a * W + Vx / 2 + Vy * sqrt(3) / 2;
+}
+
+void CAR_SPD_spin(void) {
+    SetSpd_F = 50;
+    SetSpd_BL = 50;
+    SetSpd_BR = 50;
+}
+/****************************SPD********************************/
+/****************************POS********************************/
 float update_Des(float set) {
     set = set * 1320 / 7 / PI;
     return set;
@@ -61,7 +93,7 @@ float update_Des(float set) {
 /******************/
 void CAR_spin(float des) {
     SetPos_F += des;
-    SetPos_BR -= des;
+    SetPos_BR += des;
     SetPos_BL += des;
     MotorPosPID_F.PID_OutMax = 20;
     MotorPosPID_BL.PID_OutMax = 20;
@@ -80,6 +112,7 @@ void CAR_longitudinal(float des) {
     MotorPosPID_BL.PID_OutMax = 150 * ((float) COS_30);
     MotorPosPID_BR.PID_OutMax = 150 * ((float) COS_30);
 }
+
 /*******横向********/
 /*三个轮子同时作为驱动轮*/
 /*前轮为主导方向的轮子*/
@@ -94,12 +127,21 @@ void CAR_transverse(float des) {
     MotorPosPID_BL.PID_OutMax = 150 * ((float) COS_60);
     MotorPosPID_BR.PID_OutMax = 150 * ((float) COS_60);
 }
-/*******TOF********/
-/*获取TOF数据*/
-/*变量定义*/
 
+/*******转弯********/
+/*后两轮为驱动的轮子*/
+/*F轮作为方向导向*/
+/*Des为正时向右转弯*/
 /******************/
-
+void CAR_dir(float des) {
+    SetPos_BL += 5;
+    SetPos_BR += 5;
+    SetPos_F += des;
+    MotorPosPID_F.PID_OutMax = 50;
+    MotorPosPID_BL.PID_OutMax = 20;
+    MotorPosPID_BR.PID_OutMax = 20;
+}
+/****************************POS********************************/
 #define Dest_1  220
 #define Dest_2  11
 #define Dest_3  26
@@ -344,90 +386,6 @@ void motor_thirdstage_control(void) {
     }
 }
 
-uint8_t test_second_flag = 1;
-uint8_t close_test_flag = 0;
-uint8_t second_test_reset_flag = 0;
-
-void motor_test_control(void) {
-
-    if (test_second_flag) {
-        if (!spin_flag) {
-            //自转等待识别信号
-            CAR_spin(oneTURN / 10);         //转动十分之一圈等待识别
-            HAL_Delay(1000);
-            count_spin++;
-            count_pid = 0;
-            count_close = 0;
-
-        } else {
-            if (count_pid <= count_pidLIM && !close_test_flag) {
-                //pid对焦
-                mv_measure.Kp1 = 0.05;
-                mv_measure.Ki1 = 0.0;
-                mv_measure.Kd1 = 0.0;
-                mv_measure.PID_Target = 0.0;
-
-                PID_Update(&mv_measure, error_angle);
-                PID_GetPositionPID(&mv_measure);
-                mv_measure.PID_OutMax = 5;
-                HAL_Delay(100);
-                /*************待更改标记****************/
-                CAR_spin(mv_measure.PID_Out);               //回传数据还没做更改，PID_OUT输出为正是右转，输出为负是左转
-                /*************************************/
-                record_spin += mv_measure.PID_Out;
-                count_pid++;
-            }                            //在一定PID调整次数内调整位姿后跳出PID
-            else if (count_pid > count_pidLIM && !close_test_flag) {
-                close_test_flag = 1;                                 //置靠近状态标志
-                HAL_Delay(1000);                           //等待对焦PID调整结束
-            } else if (close_test_flag) {
-                if (count_close <= count_closeLIM) {
-                    dis_target.Kp1 = 0.1;
-                    dis_target.Ki1 = 0.0;
-                    dis_target.Kd1 = 0.0;
-                    dis_target.PID_Target = distance_target_th;
-                    PID_Update(&dis_target, distance_target);
-                    PID_GetPositionPID(&dis_target);
-
-                    /*************待更改标记****************/
-                    CAR_longitudinal(-dis_target.PID_Out);               //靠近参数没做好
-                    /*************************************/
-                    HAL_Delay(200);                                     //给时间调整
-                    close_PIDOUT += dis_target.PID_Out;
-                    if (count_close >= count_closeLIM || distance_target <= distance_target_th) {
-                        close_test_flag = 0;                                       //结束第二阶段靠近任务
-                        test_second_flag = 0;
-                        CAR_longitudinal(20);
-                        HAL_Delay(3000);
-                        tb_LED_start();
-                        tb_BEEP_start();
-                        second_test_reset_flag = 1;
-                        HAL_Delay(5000);
-                        tb_stop();
-                    }
-                }
-            }
-
-        }
-    }
-    if (second_test_reset_flag == 1) {                                                //第二阶段复位到识别处并完成180倒置准备TOF模块识别
-        CAR_longitudinal(close_PIDOUT);
-        HAL_Delay(3000);
-        CAR_longitudinal(close_PIDOUT);
-        HAL_Delay(5000);
-        CAR_spin(-record_spin - (count_spin * oneTURN / 10));
-        HAL_Delay(8000);
-        CAR_spin(oneTURN / 2);      //180旋转准备TOF识别
-        HAL_Delay(5000);
-        third_flag = 1;
-        tof_flag = 1;
-        second_test_reset_flag = 0;
-    }
-    usart_printf("%d,%d,%d,%d,%.2f,%.2f\r\n", error_angle, distance_target, spin_flag, stop_flag, record_spin,
-                 close_PIDOUT);
-
-}//第二阶段
-
 void motor_spin_test(void) {
 
     //pid对焦
@@ -444,7 +402,7 @@ void motor_spin_test(void) {
     /*************************************/
     record_spin += mv_measure.PID_Out;
     HAL_Delay(500);
-    usart_printf("%.2f,%.2f,%.2f,%d\r\n", record_spin, mv_measure.PID_Out, mv_measure.PID_Target, error_angle);
+//    usart_printf("%.2f,%.2f,%.2f,%d\r\n", record_spin, mv_measure.PID_Out, mv_measure.PID_Target, error_angle);
 
 }
 
@@ -461,7 +419,7 @@ void motor_close_test(void) {
     /*************************************/
     close_PIDOUT += dis_target.PID_Out;
     HAL_Delay(200);                                     //给时间调整
-    usart_printf("%.2f,%.2f,%.2f,%d\r\n", close_PIDOUT, dis_target.PID_Out, dis_target.PID_Target, distance_target);
+//    usart_printf("%.2f,%.2f,%.2f,%d\r\n", close_PIDOUT, dis_target.PID_Out, dis_target.PID_Target, distance_target);
 }
 
 void motor_tof_test(void) {
@@ -478,8 +436,8 @@ void motor_tof_test(void) {
     count_tof++;
     HAL_Delay(50);
 
-    usart_printf("%d,%.2f,%.2f,%d,%.2f\r\n", tof_data, tof_measure.PID_Out, tof_measure.PID_Target, count_tof,
-                 tof_measure.PID_OutMax);
+//    usart_printf("%d,%.2f,%.2f,%d,%.2f\r\n", tof_data, tof_measure.PID_Out, tof_measure.PID_Target, count_tof,
+//                 tof_measure.PID_OutMax);
 
 }
 

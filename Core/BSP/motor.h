@@ -15,6 +15,7 @@ float   update_Des(float set);
 void    CAR_spin(float des);
 void    CAR_longitudinal(float des);
 void    CAR_transverse(float des);
+void    CAR_dir(float des);
 void    motor_firststage_control(void);
 void    motor_secondstage_control(void);
 void    motor_thirdstage_control(void);
@@ -24,6 +25,8 @@ void    motor_tof_test(void);
 void    motor_detectflag(void);
 void    motor_test_control(void);
 
+void    CAR_liner(float Vx, float Vy, float W);//速度环，线性集成
+void    CAR_SPD_spin(void);
 
 extern PID_t mv_measure;
 extern PID_t tof_measure;

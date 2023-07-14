@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\clion\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "F:\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\clion\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "F:\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code
+CMAKE_SOURCE_DIR = E:\A_moluo\EEdesign\EE_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug
+CMAKE_BINARY_DIR = E:\A_moluo\EEdesign\EE_code\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\clion\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"F:\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\clion\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"F:\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles E:\A_moluo\EEdesign\EE_code\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -151,6 +151,30 @@ Core/BSP/LED_BEEP.s: Core/BSP/LED_BEEP.c.s
 Core/BSP/LED_BEEP.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.s
 .PHONY : Core/BSP/LED_BEEP.c.s
+
+Core/BSP/WIT_sensor.obj: Core/BSP/WIT_sensor.c.obj
+.PHONY : Core/BSP/WIT_sensor.obj
+
+# target to build an object file
+Core/BSP/WIT_sensor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj
+.PHONY : Core/BSP/WIT_sensor.c.obj
+
+Core/BSP/WIT_sensor.i: Core/BSP/WIT_sensor.c.i
+.PHONY : Core/BSP/WIT_sensor.i
+
+# target to preprocess a source file
+Core/BSP/WIT_sensor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.i
+.PHONY : Core/BSP/WIT_sensor.c.i
+
+Core/BSP/WIT_sensor.s: Core/BSP/WIT_sensor.c.s
+.PHONY : Core/BSP/WIT_sensor.s
+
+# target to generate assembly for a file
+Core/BSP/WIT_sensor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EE_code.elf.dir\build.make CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.s
+.PHONY : Core/BSP/WIT_sensor.c.s
 
 Core/BSP/debugc.obj: Core/BSP/debugc.c.obj
 .PHONY : Core/BSP/debugc.obj
@@ -940,6 +964,9 @@ help:
 	@echo ... Core/BSP/LED_BEEP.obj
 	@echo ... Core/BSP/LED_BEEP.i
 	@echo ... Core/BSP/LED_BEEP.s
+	@echo ... Core/BSP/WIT_sensor.obj
+	@echo ... Core/BSP/WIT_sensor.i
+	@echo ... Core/BSP/WIT_sensor.s
 	@echo ... Core/BSP/debugc.obj
 	@echo ... Core/BSP/debugc.i
 	@echo ... Core/BSP/debugc.s

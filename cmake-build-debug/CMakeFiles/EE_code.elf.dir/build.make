@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\clion\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "F:\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\clion\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "F:\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code
+CMAKE_SOURCE_DIR = E:\A_moluo\EEdesign\EE_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug
+CMAKE_BINARY_DIR = E:\A_moluo\EEdesign\EE_code\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/EE_code.elf.dir/depend.make
@@ -69,483 +69,498 @@ include CMakeFiles/EE_code.elf.dir/progress.make
 include CMakeFiles/EE_code.elf.dir/flags.make
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/LED_BEEP.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/LED_BEEP.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\LED_BEEP.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\LED_BEEP.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\LED_BEEP.c > CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\LED_BEEP.c > CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\LED_BEEP.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\LED_BEEP.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\LED_BEEP.c.s
+
+CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
+CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/WIT_sensor.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\WIT_sensor.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\WIT_sensor.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\WIT_sensor.c
+
+CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.i"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\WIT_sensor.c > CMakeFiles\EE_code.elf.dir\Core\BSP\WIT_sensor.c.i
+
+CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.s"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\WIT_sensor.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\WIT_sensor.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/debugc.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/debugc.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\debugc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\debugc.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\debugc.c > CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\debugc.c > CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\debugc.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\debugc.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\debugc.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/encoder.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/encoder.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\encoder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\encoder.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\encoder.c > CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\encoder.c > CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\encoder.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\encoder.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\encoder.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/motor.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/motor.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\motor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\motor.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\motor.c > CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\motor.c > CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\motor.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\motor.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\motor.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/mp3.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/mp3.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\mp3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\mp3.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\mp3.c > CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\mp3.c > CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/mp3.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\mp3.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\mp3.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\mp3.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/openmv.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/openmv.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\openmv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\openmv.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\openmv.c > CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\openmv.c > CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/openmv.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\openmv.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\openmv.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\openmv.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/pid.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/pid.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\pid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\pid.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\pid.c > CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\pid.c > CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/pid.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\pid.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\pid.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\pid.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/tof.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\tof.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof.c > CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\tof.c > CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/tof.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\tof.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/BSP/tof_usart.c
+CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj: E:/A_moluo/EEdesign/EE_code/Core/BSP/tof_usart.c
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof_usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\BSP\tof_usart.c
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof_usart.c > CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\BSP\tof_usart.c > CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/BSP/tof_usart.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\BSP\tof_usart.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\BSP\tof_usart.c -o CMakeFiles\EE_code.elf.dir\Core\BSP\tof_usart.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/dma.c
+CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/dma.c
 CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\dma.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\dma.c > CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\dma.c > CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/dma.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\dma.c -o CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\dma.c -o CMakeFiles\EE_code.elf.dir\Core\Src\dma.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/gpio.c
+CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/gpio.c
 CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\gpio.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\gpio.c > CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\gpio.c > CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/gpio.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\gpio.c -o CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\gpio.c -o CMakeFiles\EE_code.elf.dir\Core\Src\gpio.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/main.c
+CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/main.c
 CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\main.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\main.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\main.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/main.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\main.c > CMakeFiles\EE_code.elf.dir\Core\Src\main.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\main.c > CMakeFiles\EE_code.elf.dir\Core\Src\main.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/main.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\main.c -o CMakeFiles\EE_code.elf.dir\Core\Src\main.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\main.c -o CMakeFiles\EE_code.elf.dir\Core\Src\main.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/stm32f1xx_hal_msp.c
+CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\stm32f1xx_hal_msp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/stm32f1xx_it.c
+CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/stm32f1xx_it.c
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\stm32f1xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\stm32f1xx_it.c > CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\stm32f1xx_it.c > CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/stm32f1xx_it.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\stm32f1xx_it.c -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\stm32f1xx_it.c -o CMakeFiles\EE_code.elf.dir\Core\Src\stm32f1xx_it.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/syscalls.c
+CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/syscalls.c
 CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\syscalls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\syscalls.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\syscalls.c > CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\syscalls.c > CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/syscalls.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\syscalls.c -o CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\syscalls.c -o CMakeFiles\EE_code.elf.dir\Core\Src\syscalls.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/sysmem.c
+CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/sysmem.c
 CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\sysmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\sysmem.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\sysmem.c > CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\sysmem.c > CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/sysmem.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\sysmem.c -o CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\sysmem.c -o CMakeFiles\EE_code.elf.dir\Core\Src\sysmem.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/system_stm32f1xx.c
+CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/system_stm32f1xx.c
 CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\system_stm32f1xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\system_stm32f1xx.c > CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\system_stm32f1xx.c > CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/system_stm32f1xx.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\system_stm32f1xx.c -o CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\system_stm32f1xx.c -o CMakeFiles\EE_code.elf.dir\Core\Src\system_stm32f1xx.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/tim.c
+CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/tim.c
 CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\tim.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\tim.c > CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\tim.c > CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/tim.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\tim.c -o CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\tim.c -o CMakeFiles\EE_code.elf.dir\Core\Src\tim.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Src/usart.c
+CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj: E:/A_moluo/EEdesign/EE_code/Core/Src/usart.c
 CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.obj -c E:\A_moluo\EEdesign\EE_code\Core\Src\usart.c
 
 CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\usart.c > CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Src\usart.c > CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.i
 
 CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Core/Src/usart.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Src\usart.c -o CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Src\usart.c -o CMakeFiles\EE_code.elf.dir\Core\Src\usart.c.s
 
 CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Core/Startup/startup_stm32f103c8tx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building ASM object CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\EE_code.elf.dir\Core\Startup\startup_stm32f103c8tx.s.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Startup\startup_stm32f103c8tx.s
+CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: E:/A_moluo/EEdesign/EE_code/Core/Startup/startup_stm32f103c8tx.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\EE_code.elf.dir\Core\Startup\startup_stm32f103c8tx.s.obj -c E:\A_moluo\EEdesign\EE_code\Core\Startup\startup_stm32f103c8tx.s
 
 CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Startup\startup_stm32f103c8tx.s > CMakeFiles\EE_code.elf.dir\Core\Startup\startup_stm32f103c8tx.s.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Core\Startup\startup_stm32f103c8tx.s > CMakeFiles\EE_code.elf.dir\Core\Startup\startup_stm32f103c8tx.s.i
 
 CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/EE_code.elf.dir/Core/Startup/startup_stm32f103c8tx.s.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Core\Startup\startup_stm32f103c8tx.s -o CMakeFiles\EE_code.elf.dir\Core\Startup\startup_stm32f103c8tx.s.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Core\Startup\startup_stm32f103c8tx.s -o CMakeFiles\EE_code.elf.dir\Core\Startup\startup_stm32f103c8tx.s.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/EE_code.elf.dir/flags.make
-CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: E:/A_moluo/EEdesign/EE_code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/EE_code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.i
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c > CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.i
 
 CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s"
-	D:\ENVIRO~1\GCC-AR~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.s
+	F:\environment_for_clion\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\A_moluo\EEdesign\EE_code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c -o CMakeFiles\EE_code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.s
 
 # Object files for target EE_code.elf
 EE_code_elf_OBJECTS = \
 "CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj" \
+"CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj" \
 "CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj" \
 "CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj" \
 "CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj" \
@@ -584,6 +599,7 @@ EE_code_elf_OBJECTS = \
 EE_code_elf_EXTERNAL_OBJECTS =
 
 EE_code.elf: CMakeFiles/EE_code.elf.dir/Core/BSP/LED_BEEP.c.obj
+EE_code.elf: CMakeFiles/EE_code.elf.dir/Core/BSP/WIT_sensor.c.obj
 EE_code.elf: CMakeFiles/EE_code.elf.dir/Core/BSP/debugc.c.obj
 EE_code.elf: CMakeFiles/EE_code.elf.dir/Core/BSP/encoder.c.obj
 EE_code.elf: CMakeFiles/EE_code.elf.dir/Core/BSP/motor.c.obj
@@ -619,12 +635,12 @@ EE_code.elf: CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1
 EE_code.elf: CMakeFiles/EE_code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 EE_code.elf: CMakeFiles/EE_code.elf.dir/build.make
 EE_code.elf: CMakeFiles/EE_code.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking C executable EE_code.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable EE_code.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EE_code.elf.dir\link.txt --verbose=$(VERBOSE)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.hex"
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.bin"
-	arm-none-eabi-objcopy -Oihex D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.elf D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.hex
-	arm-none-eabi-objcopy -Obinary D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.elf D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/EE_code/cmake-build-debug/EE_code.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building E:/A_moluo/EEdesign/EE_code/cmake-build-debug/EE_code.hex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building E:/A_moluo/EEdesign/EE_code/cmake-build-debug/EE_code.bin"
+	arm-none-eabi-objcopy -Oihex E:/A_moluo/EEdesign/EE_code/cmake-build-debug/EE_code.elf E:/A_moluo/EEdesign/EE_code/cmake-build-debug/EE_code.hex
+	arm-none-eabi-objcopy -Obinary E:/A_moluo/EEdesign/EE_code/cmake-build-debug/EE_code.elf E:/A_moluo/EEdesign/EE_code/cmake-build-debug/EE_code.bin
 
 # Rule to build all files generated by this target.
 CMakeFiles/EE_code.elf.dir/build: EE_code.elf
@@ -635,6 +651,6 @@ CMakeFiles/EE_code.elf.dir/clean:
 .PHONY : CMakeFiles/EE_code.elf.dir/clean
 
 CMakeFiles/EE_code.elf.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug D:\A_moluo_document\SCU_SMARTCAR\EEdesign\code\EE_code\cmake-build-debug\CMakeFiles\EE_code.elf.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\A_moluo\EEdesign\EE_code E:\A_moluo\EEdesign\EE_code E:\A_moluo\EEdesign\EE_code\cmake-build-debug E:\A_moluo\EEdesign\EE_code\cmake-build-debug E:\A_moluo\EEdesign\EE_code\cmake-build-debug\CMakeFiles\EE_code.elf.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/EE_code.elf.dir/depend
 
