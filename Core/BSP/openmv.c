@@ -7,16 +7,16 @@
 #include "stm32f1xx_hal.h"
 #include "bsp_headfile.h"
 
-int8_t mv_Cx = 0, mv_Cy = 0, mv_Cw = 0, mv_Ch = 0;
+int16_t mv_Cx = 0, mv_Cy = 0, mv_Cw = 0, mv_Ch = 0;
 int16_t error_angle, distance_target;
-uint8_t stop_flag;
+int16_t stop_flag;
 
 int8_t uart2_rxbuff;
 
 /*****MV2---usart3******/
-int8_t mv_Cx_2 = 0, mv_Cy_2 = 0, mv_Cw_2 = 0, mv_Ch_2 = 0;
-int16_t error_angle_mv2, distance_target_mv2;
-uint8_t stop_flag_mv2;
+int16_t mv_Cx_2 = 0, mv_Cy_2 = 0, mv_Cw_2 = 0, mv_Ch_2 = 0;
+int16_t error_angle_mv2, distance_target_mv2,config_mv2;
+int16_t stop_flag_mv2;
 
 int8_t uart3_rxbuff;
 /*****MV2---usart3******/
@@ -30,10 +30,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     {
         tem = uart2_rxbuff;
         Openmv_Receive_Data(tem);
-//        DEBUGC_UartIrqHandler(&huart2);
-//        DEBUGC_UartIdleCallback(&huart2);
+        DEBUGC_UartIrqHandler(&huart2);
+        DEBUGC_UartIdleCallback(&huart2);
     }
-    HAL_UART_Receive_IT(&huart2,(void *)&uart2_rxbuff,1);
+//    HAL_UART_Receive_IT(&huart2,(void *)&uart2_rxbuff,1);
     if(huart->Instance== USART3)
     {
 //        u3_tem = tof_rxbuff;
@@ -173,6 +173,7 @@ void Openmv2_Receive_Data(int16_t com_data) {
 
             error_angle_mv2 = mv_Cx_2;
             distance_target_mv2 = mv_Cy_2;
+            config_mv2=mv_Cw_2;
             stop_flag_mv2 = mv_Ch_2;
 //               if(RxState==1)
 //          {

@@ -43,9 +43,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         Motor_SpeedC_BL();
         Motor_SpeedC_BR();
 //        TIMER++;
-//		usart_printf("%d,%d\r\n",1,1);
+//		usart_printf("%d,%.2f\r\n",1,0.58);
 //        usart_printf("%d,%d,%d,%d\r\n", error_angle, distance_target, spin_flag, stop_flag);
-        usart_printf("%d\r\n",1);
+//        usart_printf("%d,%d,%d,%d\r\n",error_angle_mv2,distance_target_mv2,config_mv2,stop_flag_mv2);
     }
 }
 

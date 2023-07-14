@@ -1,4 +1,4 @@
-# Install script for directory: E:/A_moluo/EEdesign/EE_code
+# Install script for directory: D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/A_moluo/EEdesign/EE_code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/A_moluo_document/SCU_SMARTCAR/EEdesign/code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

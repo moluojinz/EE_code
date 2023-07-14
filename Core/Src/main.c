@@ -96,11 +96,11 @@ int main(void) {
     MX_USART3_UART_Init();
     /* USER CODE BEGIN 2 */
     HAL_TIM_Base_Start_IT(&htim4);
-//    DEBUGC_UartInit();
+    DEBUGC_UartInit();
 
     encoder_Init();
     TIM_StartEncorder();
-    openmv_Init();
+//    openmv_Init();
     openmv2_Init();
 //    TOF_UartInit();
 //    WIT_sensor_USART_Init(&WT9011G4K_data);
