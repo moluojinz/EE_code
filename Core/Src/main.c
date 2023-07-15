@@ -96,7 +96,7 @@ int main(void) {
     MX_USART3_UART_Init();
     /* USER CODE BEGIN 2 */
     HAL_TIM_Base_Start_IT(&htim4);
-    DEBUGC_UartInit();
+//    DEBUGC_UartInit();
 
     encoder_Init();
     TIM_StartEncorder();
